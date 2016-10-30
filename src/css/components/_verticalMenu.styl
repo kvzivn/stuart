@@ -1,0 +1,33 @@
+.VerticalMenu {
+    margin-top: 1.75rem;
+    padding-top: 1.75rem;
+    list-style: none;
+    border-top: 1px solid #ddd;
+}
+
+.VerticalMenuItem {
+    position: relative;
+    color: grey.dark;
+    font-size: 1rem;
+
+    &:nth-of-type(7) {
+        padding-bottom: .5rem;
+    }
+
+    &:nth-of-type(8) {
+        padding-top: 1.25rem;
+        border-top: 1px solid #ddd;
+    }
+
+    & + & {
+        margin-top: 1rem;
+    }
+}
+
+.VerticalMenuItem-link {
+    color: grey.dark;
+
+    &:hover {
+        color: grey.main;
+    }
+}

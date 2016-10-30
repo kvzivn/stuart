@@ -1,0 +1,47 @@
+.Topbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 945px;
+    margin: 1rem auto 0;
+    padding: 0 2rem;
+
+    @media tabletUp {
+        align-items: flex-end;
+    }
+
+    @media desktopUp {
+        padding: 0;
+    }
+}
+
+.Topbar-primary {
+    display: flex;
+
+    > * + * {
+        margin-left: 2.25rem;
+    }
+}
+
+.Topbar-menu {
+    display: none;
+
+    @media tabletUp {
+        display: flex;
+    }
+}
+
+.Topbar-secondary {
+    display: none;
+    align-items: center;
+
+    > * + * {
+        margin-left: 2rem;
+    }
+
+    @media tabletUp {
+        display: flex;
+    }
+}
